@@ -24,3 +24,12 @@ Pusheo el tag a mi repo.
 docker push fiacu/ejercicio02:v1.0
 ```
 
+6. Incluye al final de las instrucciones la sentencia docker pull exacta para descargar tu imagen.
+
+```bash
+$ docker pull fiacu/ejercicio02:v1.0
+v1.0: Pulling from fiacu/ejercicio02
+Digest: sha256:b3ccc9984deb6eb1dfd9ce172f29c38651902ece467c666f6e585ddf9ba4adb5
+Status: Image is up to date for fiacu/ejercicio02:v1.0
+docker.io/fiacu/ejercicio02:v1.0
+```
