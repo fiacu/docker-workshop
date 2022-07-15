@@ -5,11 +5,15 @@ Investigar cuantas layers tienen las imágenes nicopaez/passwordapi-java:java8-a
 
 1. Descargo imagen alpine
 
+```bash
 docker pull nicopaez/passwordapi-java:java8-alpine
+```
 
-2. Ispeccionar imagen alpine
+2. Inspecciono imagen alpine
 
+```bash
 docker inspect nicopaez/passwordapi-java:java8-alpine
+```
 
 Layers": [
     **"sha256:73046094a9b835e443af1a9d736fcfc11a994107500e474d0abf399499ed280c",**
@@ -20,11 +24,15 @@ Layers": [
 
 3. Descargo imagen fabric
 
+```bash
 docker pull nicopaez/passwordapi-java:java8-fabric
+```
 
-2. Ispeccionar imagen fabric
+2. Inspecciono imagen fabric
 
+```bash
 docker inspect nicopaez/passwordapi-java:java8-fabric
+```
 
 "Layers": [
     **"sha256:73046094a9b835e443af1a9d736fcfc11a994107500e474d0abf399499ed280c",**
