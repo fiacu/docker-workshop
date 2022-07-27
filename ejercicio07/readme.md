@@ -12,7 +12,9 @@ Dado que cada contenedor corre en forma aislada ¿Cómo es posible que esos cont
 
 Escribe tus respuestas ejercicio07/README.md en tu repositorio github y entrega el link directo al archivo.
 
-* ¿Cuántos contenedores se están ejecutando? (pueden verlo en el archivo docker-compose-jobvacancy.yml y también ejecutando docker ps)
+# Respuestas #
+
+1. ¿Cuántos contenedores se están ejecutando? (pueden verlo en el archivo docker-compose-jobvacancy.yml y también ejecutando docker ps)
 
 Se estan ejecutando 2 contenedores. En el archivo yml se distinguen 2 servicios el web y la db. Cuando ejecuto el comando docker ps se listan los 2 contenedores:
 
@@ -23,12 +25,12 @@ c54f4db96a0f   nicopaez/jobvacancy-ruby:1.3.0   "/jobvacancy/start_a…"   25 ho
 35e5d8cc9b1c   postgres:14.4-alpine             "docker-entrypoint.s…"   25 hours ago   Up 17 seconds   5432/tcp                 ejercicio07_db_1
 ```
 
-* ¿Cuales son las imágenes en las que están basados los mencionados contenedores?
+2. ¿Cuales son las imágenes en las que están basados los mencionados contenedores?
 
 - nicopaez/jobvacancy-ruby:1.3.0
 - postgres:14.4-alpine
 
-* ¿Puedes leer el docker-compose-jobvacancy.yml y describir lo que hace cada una de sus lineas?
+3. ¿Puedes leer el docker-compose-jobvacancy.yml y describir lo que hace cada una de sus lineas?
 
 Segun la documentacion: [https://docs.docker.com/compose/compose-file/](https://docs.docker.com/compose/compose-file/)
 
@@ -52,7 +54,7 @@ services: => servicios que componen
       POSTGRES_PASSWORD: Passw0rd!
 ```
 
-* Dado que cada contenedor corre en forma aislada ¿Cómo es posible que esos contenedores se vean entre sí?
+4. Dado que cada contenedor corre en forma aislada ¿Cómo es posible que esos contenedores se vean entre sí?
 
 Los servicios se comunica por medio de una network. En este caso la creada por defecto ejercicio07_default
 
